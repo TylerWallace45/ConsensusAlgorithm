@@ -1,4 +1,4 @@
-public class Worker {
+public class Worker extends Thread {
 	public Worker() {
         System.out.println("Hello from the worker!");
     }
