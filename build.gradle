@@ -5,7 +5,8 @@ apply plugin: 'application'
 task runWorker(type: JavaExec) {
   group 'Socket Server/Client'
   description 'Creates Server and waits for clients to connect'
-
+  
+  standardInput = System.in
   classpath = sourceSets.main.runtimeClasspath
 
   main = 'Worker'
